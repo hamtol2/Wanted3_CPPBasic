@@ -49,7 +49,7 @@ int main()
 	}
 
 	// 할당 했으면 해제.
-	//delete[] array;
+	delete[] array;
 
 	// 바로 종료 x.
 	std::cin.get();
