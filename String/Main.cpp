@@ -26,12 +26,12 @@ char ToLowerCase(char uppercase);
 
 // 클래스.
 // class_클래스 이름 { };
-class Person
+class Player
 {
 	// 함수.
 public:
 	// 생성자(클래스 이름과 이름이 같은 함수/반환을 안함).
-	Person(const char* name)
+	Player(const char* name)
 	{
 		// 전달받은 문자열의 길이 구하기.
 		size_t length = strlen(name) + 1;
@@ -44,7 +44,7 @@ public:
 	}
 
 	// 소멸자(객체가 해제될 때 호출되는 함수.
-	~Person()
+	~Player()
 	{
 		// 해제/소멸/삭제.
 		// == 동등비교, != 아닌지비교.
@@ -94,7 +94,7 @@ int main()
 	const wchar_t* name2 = TEXT("RonnieJang");
 
 	// Person 객체 생성.
-	Person person("Ronnie");
+	Player person("Ronnie");
 	person.PrintName();
 
 	//std::cout 
