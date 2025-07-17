@@ -1,4 +1,5 @@
 #include <iostream>
+#include <Windows.h>
 
 #define _CRTDBG_MAP_ALLOC
 #include <stdlib.h>
@@ -88,6 +89,9 @@ int main()
 	char name[7] = { 'R', 'o', 'n', 'n', 'i', 'e', '\0' };
 
 	std::cout << name << "\n";
+
+	//const wchar_t* name2 = L"RonnieJang";
+	const wchar_t* name2 = TEXT("RonnieJang");
 
 	// Person °´Ã¼ »ý¼º.
 	Person person("Ronnie");
