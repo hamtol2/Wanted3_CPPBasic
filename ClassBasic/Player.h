@@ -1,5 +1,7 @@
 #pragma once
 
+#include <iostream>
+
 // 클래스.
 namespace Engine
 {
@@ -12,6 +14,13 @@ namespace Engine
 		Player()
 			: x(0), y(0), speed(0)
 		{
+			std::cout << "Constructor has been called.\n";
+		}
+
+		// 소멸자(Destructor).
+		~Player()
+		{
+			std::cout << "Destructor has been called.\n";
 		}
 
 		// 함수 선언.

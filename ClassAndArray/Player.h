@@ -1,0 +1,31 @@
+#pragma once
+
+class Player
+{
+public:
+	// 기본 생성자(파라미터를 받지 않음).
+	Player()
+	{
+	}
+
+	// 함수 오버로딩.
+	Player(int x, int y)
+		: x(x), y(y)
+	{
+	}
+
+	// 출력 함수.
+	void ShowPosition() const;
+
+	// Getter.
+	__forceinline int GetX() const { return x; }
+	__forceinline int GetY() const { return y; }
+
+	// Setter.
+	__forceinline void SetX(int newX) { x = newX; }
+	__forceinline void SetY(int newY) { y = newY; }
+
+private:
+	int x = 0;
+	int y = 0;
+};
