@@ -25,7 +25,12 @@ public:
 	__forceinline void SetX(int newX) { x = newX; }
 	__forceinline void SetY(int newY) { y = newY; }
 
+	// 친구 선언.
+	friend void SetPosition(Player& player, int x, int y);
+
 private:
 	int x = 0;
 	int y = 0;
 };
+
+void SetPosition(Player& player, int x, int y);
